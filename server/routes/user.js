@@ -7,7 +7,7 @@ const UserController    = require('../controllers/user');
 const User = require('../models/user')
 
 module.exports = (app) => {
-    app.use('/users', route);
+    app.use('/users', route); 
 
 
     route.get('/', UserController.getAllUser);
